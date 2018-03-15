@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical">
+    <!--tools:context="com.example.sambal.app2fetchdevicedatainjson_sambal.MainActivity">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="click me to fetch your device information"
+            tools:ignore="NotSibling" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewProcessor"
+            android:layout_marginEnd="61dp"
+            android:layout_marginRight="61dp"
+            android:layout_marginTop="98dp"
+            android:fontFamily="sans-serif"
+            android:text="Your Device information appears here" />
+
+        <TextView
+            android:id="@+id/textViewProcessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forAsync"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:maxLines="2"
+            android:text="Processor Information" />
+
+        <TextView
+            android:id="@+id/forAsync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonClick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="Note : Ad Id is here and in Toast message.Please ignore the adid : value shown in below device information"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</ScrollView>
